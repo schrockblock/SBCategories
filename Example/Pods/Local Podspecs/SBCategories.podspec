@@ -10,19 +10,19 @@
 Pod::Spec.new do |s|
   s.name             = "SBCategories"
   s.version          = "0.1.0"
-  s.summary          = "A short description of SBCategories."
+  s.summary          = "SBCategories contains iOS convenince categories, because sometimes it makes no sense the way Obj-C does things."
   s.description      = <<-DESC
                        An optional longer description of SBCategories
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/SBCategories"
+  s.homepage         = "https://github.com/schrockblock/SBCategories"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Elliot" => "elliot.schrock@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/SBCategories.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/schrockblock/SBCategories.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/schrockblock'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true

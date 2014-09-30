@@ -13,14 +13,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-SBCategories is available through [CocoaPods](http://cocoapods.org). To install
+SBCategories is available through this repo. To install
 it, simply add the following line to your Podfile:
 
-    pod "SBCategories"
-
-## Author
-
-Elliot, elliot.schrock@gmail.com
+    pod "SBCategories", :git => 'https://github.com/schrockblock/SBCategories'
 
 ## License
 

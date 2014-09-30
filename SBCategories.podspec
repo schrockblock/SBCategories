@@ -12,15 +12,14 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "SBCategories contains iOS convenince categories, because sometimes it makes no sense the way Obj-C does things."
   s.description      = <<-DESC
-                       An optional longer description of SBCategories
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Contains two categories (at the moment):
+                       
+                       * NSDictionary+ValueCheck which determines if the dict has a non NSNull value for the given key
+                       * NSArray+Reverse returns an array that is ordered opposite to the given one
                        DESC
   s.homepage         = "https://github.com/schrockblock/SBCategories"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Elliot" => "elliot.schrock@gmail.com" }
+  s.author           = { "Elliot" => "ephherd@gmail.com" }
   s.source           = { :git => "https://github.com/schrockblock/SBCategories.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/schrockblock'
 
