@@ -10,20 +10,6 @@
 
 @implementation NSDictionary (ValueCheck)
 
-+ (BOOL)dictionary:(NSDictionary *)dictionary hasValueForKey:(NSString *)key
-{
-    return dictionary
-    && [dictionary isKindOfClass:[NSDictionary class]]
-    && [[dictionary allKeys] containsObject:key]
-    && dictionary[key] != [NSNull null];
-}
-
-+ (BOOL)dictionary:(NSDictionary *)dict hasNameValueForKey:(NSString *)key
-{
-    return [NSDictionary dictionary:dict hasValueForKey:key]
-    && [NSDictionary dictionary:dict[key] hasValueForKey:@"name"];
-}
-
 - (BOOL)hasNameValueForKey:(NSString *)key
 {
     return [self hasValueForKey:key]

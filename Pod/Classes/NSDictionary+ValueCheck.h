@@ -9,10 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (ValueCheck)
-
-+ (BOOL)dictionary:(NSDictionary *)dictionary hasValueForKey:(NSString *)key;
-+ (BOOL)dictionary:(NSDictionary *)dict hasNameValueForKey:(NSString *)key;
-
 - (BOOL)hasValueForKey:(NSString *)key;
 - (BOOL)hasNameValueForKey:(NSString *)key;
 @end
