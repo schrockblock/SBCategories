@@ -16,6 +16,8 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		A3FFE70C19DD9966007C93F0 /* NSDate+RelativeTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFE70B19DD9966007C93F0 /* NSDate+RelativeTime.m */; };
+		A3FFE70E19DD9C2F007C93F0 /* NSDateRelativeTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FFE70D19DD9C2F007C93F0 /* NSDateRelativeTimeTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,9 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		70DC167B8F5B48A8AC99D2D7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A3FFE70A19DD9966007C93F0 /* NSDate+RelativeTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+RelativeTime.h"; path = "../Pod/Classes/NSDate+RelativeTime.h"; sourceTree = "<group>"; };
+		A3FFE70B19DD9966007C93F0 /* NSDate+RelativeTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+RelativeTime.m"; path = "../Pod/Classes/NSDate+RelativeTime.m"; sourceTree = "<group>"; };
+		A3FFE70D19DD9C2F007C93F0 /* NSDateRelativeTimeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDateRelativeTimeTests.m; sourceTree = "<group>"; };
 		A7C2226357684D0C93B1DFCA /* SBCategories.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SBCategories.podspec; path = ../SBCategories.podspec; sourceTree = "<group>"; };
 		CD91238946AD4C82B19FC162 /* libPods-SBCategories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SBCategories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +68,8 @@
 				499A73E619DA1BFA0019D7D0 /* NSDictionary+ValueCheck.m */,
 				49ACC57F19DA2FB80013EB6F /* NSArray+Reverse.h */,
 				49ACC58019DA2FB80013EB6F /* NSArray+Reverse.m */,
+				A3FFE70A19DD9966007C93F0 /* NSDate+RelativeTime.h */,
+				A3FFE70B19DD9966007C93F0 /* NSDate+RelativeTime.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 			children = (
 				499A73E819DA1CD50019D7D0 /* NSDictionaryValueCheckTests.m */,
 				49ACC58219DA30430013EB6F /* NSArrayReverseTests.m */,
+				A3FFE70D19DD9C2F007C93F0 /* NSDateRelativeTimeTests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
 			path = Tests;
@@ -234,10 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FFE70C19DD9966007C93F0 /* NSDate+RelativeTime.m in Sources */,
 				49ACC58119DA2FB80013EB6F /* NSArray+Reverse.m in Sources */,
 				499A73E719DA1BFA0019D7D0 /* NSDictionary+ValueCheck.m in Sources */,
 				499A73E919DA1CD50019D7D0 /* NSDictionaryValueCheckTests.m in Sources */,
 				49ACC58319DA30430013EB6F /* NSArrayReverseTests.m in Sources */,
+				A3FFE70E19DD9C2F007C93F0 /* NSDateRelativeTimeTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
