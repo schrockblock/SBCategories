@@ -1,6 +1,6 @@
 # SBCategories
 
-[![CI Status](http://img.shields.io/travis/Elliot/SBCategories.svg?style=flat)](https://travis-ci.org/Elliot/SBCategories)
+[![CI Status](http://img.shields.io/travis/schrockblock/SBCategories.svg?style=flat)](https://travis-ci.org/schrockblock/SBCategories)
 [![Version](https://img.shields.io/cocoapods/v/SBCategories.svg?style=flat)](http://cocoadocs.org/docsets/SBCategories)
 [![License](https://img.shields.io/cocoapods/l/SBCategories.svg?style=flat)](http://cocoadocs.org/docsets/SBCategories)
 [![Platform](https://img.shields.io/cocoapods/p/SBCategories.svg?style=flat)](http://cocoadocs.org/docsets/SBCategories)
@@ -10,6 +10,8 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+None
 
 ## Installation
 
