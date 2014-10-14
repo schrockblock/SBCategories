@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/SBCategories.svg?style=flat)](http://cocoadocs.org/docsets/SBCategories)
 [![Platform](https://img.shields.io/cocoapods/p/SBCategories.svg?style=flat)](http://cocoadocs.org/docsets/SBCategories)
 
+Unfortunately, Travis, xctool, and Specta/Expecta tests don't play well. The tests do in fact pass, but you'll' have to run them from Xcode yourself to verify that.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
