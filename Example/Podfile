@@ -3,8 +3,21 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'SBCategories', :exclusive => true do
   pod "SBCategories", :path => "../"
 
-  pod 'Specta', '~> 0.2.1'
+  pod 'Specta'
   pod 'Expecta'
+end
+
+post_install do |installer|
+    project = installer.project
+    if (project)
+        project.build_configurations.each do |config|
+            s = config.build_settings['ONLY_ACTIVE_ARCH']
+            s = 'NO' if s == 'YES';
+            config.build_settings['ONLY_ACTIVE_ARCH'] = s
+        end
+    else
+        puts "WARNING: Pods project not found!"
+    end
 end
 
 #post_install do |installer|

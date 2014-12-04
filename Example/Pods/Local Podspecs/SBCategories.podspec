@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SBCategories"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "SBCategories contains iOS convenince categories, because sometimes it makes no sense the way Obj-C does things."
   s.description      = <<-DESC
                        Contains two categories (at the moment):

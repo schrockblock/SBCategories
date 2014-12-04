@@ -74,6 +74,12 @@ describe(@"test unit incrementation", ^{
         expect([formatter stringFromDate:testDate]).to.equal(@"2014-10-03 10:00:00");
     });
     
+    it(@"increments days by one, changing years", ^{
+        date = [formatter dateFromString:@"2014-12-31 10:00:00"];
+        testDate = [date incrementUnit:NSCalendarUnitDay by:1];
+        expect([formatter stringFromDate:testDate]).to.equal(@"2015-01-01 10:00:00");
+    });
+    
     it(@"increments days by negative one", ^{
         date = [formatter dateFromString:@"2014-10-02 10:00:00"];
         testDate = [date incrementUnit:NSCalendarUnitDay by:-1];
