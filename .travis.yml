@@ -1,6 +1,12 @@
 # reference: http://www.objc.io/issue-6/travis-ci.html
 
 language: objective-c
-before_install: gem update cocoapods && cd Example && pod install && cd -
-script:
-- xctool test -workspace Example/SBCategories.xcworkspace -scheme SBCategoriesTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+before_install: 
+  - gem install cocoapods
+  - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
+  - cd Example
+  - pod install
+  - cd ..
+xcode_workspace: Example/SBCategories.xcworkspace 
+xcode_scheme: SBCategoriesTests
+xcode_sdk: iphonesimulator8.1
